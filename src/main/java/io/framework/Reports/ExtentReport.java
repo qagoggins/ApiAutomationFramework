@@ -14,7 +14,7 @@ public final class ExtentReport {
 
     public static void initReports() {
         extent = new ExtentReports();
-        ExtentSparkReporter spark = new ExtentSparkReporter("index.html");
+        ExtentSparkReporter spark = new ExtentSparkReporter("report/index.html");
         extent.attachReporter(spark);
     }
     public static void tearDownReports() {
