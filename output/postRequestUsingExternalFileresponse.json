@@ -1,0 +1,28 @@
+{
+  "id": "53",
+  "fname": "alec",
+  "lname": "little",
+  "favFoods": {
+    "lunch": "rice",
+    "breakfast": "idly",
+    "dinner": [
+      "chapathi",
+      "milk"
+    ]
+  },
+  "jobs": [
+    "tester",
+    "trainer"
+  ],
+  "marks": [
+    {
+      "tamil": 90,
+      "english": 85
+    },
+    {
+      "tamil": 90,
+      "english": 85
+    }
+  ],
+  "email": "abcd@gmail.com"
+}

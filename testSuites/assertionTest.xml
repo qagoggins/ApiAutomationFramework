@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="custom assertions test suite">
+    <listeners>
+        <listener class-name="io.framework.Listeners.TestListener"></listener>
+    </listeners>
+    <test thread-count="2" name="C:\Users\user\Проекты\STUDY\apiautoframework">
+        <classes>
+            <class name="io.framework.tests.AssertionTests">
+                <methods>
+                    <include name="responseHasKeysAssertionTest" />
+                    <include name="fieldTypeAssertionTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

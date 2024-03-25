@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="http methods test suite">
+    <listeners>
+        <listener class-name="io.framework.Listeners.TestListener"></listener>
+    </listeners>
+    <test thread-count="5" name="Post method tests">
+        <classes>
+            <class name="io.framework.tests.PostTests">
+                <methods>
+                    <include name="postRequestUsingExternalFile" />
+                    <include name="postTestUsingPojo" />
+                </methods>
+            </class>
+            <class name="io.framework.tests.GetTests">
+                <methods>
+                    <include name="getEmployeesDetails" />
+                    <include name="getEmployeeDetails" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

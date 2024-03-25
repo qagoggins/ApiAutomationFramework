@@ -1,0 +1,54 @@
+КАК ЗАПУСТИТЬ:
+
+npm i -g json-server
+cd Проекты/servak
+json-server --watch db.json
+ запуск ELK стека:
+    kibana.bat
+    elasticsearch.bat
+    logstash.bat
+ запуск testng.xml (Определить какие тесты запустить)
+
+Структура проекта:
+index.html -> extent report Отчёт
+pom.xml -> Dependencies
+testng.xml -> Файл TestNG для распоряжения тестами
+/logs -> log файлы которые отправятся через logstash в elasticsearch
+/output -> результаты запросов которые выводятся в формате json
+/src
+    /main
+        /Annotations -> Аннотация которая идет перед тестом, чтобы обозначить автора, тип теста
+        /Assertions -> Кастомные ассерты проверки, внутри них есть логи записывающиеся в файл /logs/assertions.log при ошибке
+        /Constants -> Класс-хранилище с неизменяемыми переменными внутри, которые можно использовать по всему проекту
+        /Enums -> Enum'ы служат ключом для получения данных с .properties файлов
+        /Listeners -> TestNG обработчики событий тестов(в случае успешного прохождения делай 1, в случае неудачи делай 2 и т.д.)
+        /Pojo -> Pojo классы служат телом которое мы используем для HTTP запросов для которых нужно тело
+        /Reports -> Extent Report'ы, записывающие всё и создающие index.html в котором все отчётности
+        /RequestBuilder -> Готовые методы отправки запросов
+        /Utils -> Все полезные штуки: конвертер из JSON в Map, получение данных из .properties файлов, генераторы фейк-данных
+    /test
+        /java
+            /tests
+                /AssertionTests -> Тесты для проверки кастомных ассерт'ов
+                /AssignmentTests -> Список заданий для тестов, подробнее в файле assignment.txt
+                /BaseTest -> Родительский класс всех тестов
+                /GetTests -> Все Get тесты
+                /PostTests -> Все Post тесты
+            /demo
+                /AuthDemo -> Аутентификация, базовый пример
+                /DataProviderTest -> Пример DataProvider
+                /ExtentReportsDemo -> Пример пользования extentReports
+        /resources
+            /jsons -> Шаблоны данных в формате JSON для будущего их применения/изменения и вывода в output
+            config.properties -> наш конфиг файл .properties, можно настроить высокоуровневые части проекта
+            log4j2.xml -> Файл Log4j2 в котором есть: настройка log4j, куда выводить данные логов, подключение к logstash
+            logstash.conf -> конфиг-файл logstash в котором мы подключаемся к elasticsearch (БД наших логов)
+
+
+
+IN CASE OF!!!!!!!!!!!!!!!!!!!!!:
+ Please refer to C:\Users\user\Проекты\STUDY\apiautoframework\target\surefire-reports for the individual test results.
+        mvn surefire-report:report -DshowSuccess=false
+        <configuration>
+            <useFile>false</useFile>
+        </configuration>

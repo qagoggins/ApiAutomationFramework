@@ -1,0 +1,32 @@
+[ERROR] 2024-03-24 15:22:21 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 15:23:02 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 15:26:35 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 16:29:15 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 16:29:15 [main] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-24 16:33:31 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 16:33:31 [main] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-24 17:15:22 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 17:15:22 [main] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-24 17:19:20 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 17:19:20 [main] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-24 17:29:45 [main] Assertions - Response does not contain expected key: 'car'
+[ERROR] 2024-03-24 17:32:56 [main] Assertions - Response does not contain expected key: 'car'
+[ERROR] 2024-03-24 17:40:52 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 17:40:52 [main] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-24 17:47:40 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 17:47:40 [main] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-24 17:49:58 [main] Assertions - Response does not contain expected keys: 'car', 'house'
+[ERROR] 2024-03-24 17:49:59 [main] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-24 17:49:59 [main] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-25 09:42:34 [TestNG-tests-1] Assertions - Response does not contain expected keys: 'car', 'house'
+[ERROR] 2024-03-25 09:42:38 [TestNG-tests-1] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-25 09:42:38 [TestNG-tests-1] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-25 09:51:33 [TestNG-tests-1] Assertions - Response does not contain expected keys: 'car', 'house'
+[ERROR] 2024-03-25 09:51:34 [TestNG-tests-1] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-25 09:51:35 [TestNG-tests-1] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-25 09:55:00 [TestNG-tests-1] Assertions - Response does not contain expected keys: 'car', 'house'
+[ERROR] 2024-03-25 09:55:01 [TestNG-tests-1] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-25 09:55:01 [TestNG-tests-1] Assertions - Field 'lname' has type 'String' expected 'Boolean'.
+[ERROR] 2024-03-25 09:59:42 [TestNG-tests-1] Assertions - Response does not contain expected keys: 'car', 'house'
+[ERROR] 2024-03-25 09:59:43 [TestNG-tests-1] Assertions - Field 'lname' has type 'String' expected 'Integer'.
+[ERROR] 2024-03-25 09:59:44 [TestNG-tests-1] Assertions - Field 'lname' has type 'String' expected 'Boolean'.

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="assignment test suite">
+    <listeners>
+        <listener class-name="io.framework.Listeners.TestListener"></listener>
+    </listeners>
+    <test thread-count="1" name="Custom assertions test">
+        <classes>
+            <class name="io.framework.tests.AssignmentTests">
+                <methods>
+                    <include name="assignmentTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

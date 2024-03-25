@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error" name="PropertiesConfig">
+    <Properties>
+        <Property name="filename">logs</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss} [%t] %c{1} - %msg%n"/>
+        </Console>
+        <File name="AppFile" fileName="logs/app.log">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss} [%t] %c{1} - %msg%n"/>
+        </File>
+        <File name="AssertionFile" fileName="logs/assertions.log">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss} [%t] %c{1} - %msg%n"/>
+        </File>
+            <!-- Аппендер для отправки логов в Logstash -->
+        <Socket name="logstash" host="127.0.0.1" port="9600" protocol="TCP">
+            <PatternLayout pattern="${defaultPattern}" />
+        </Socket>
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="AppFile"/>
+            <AppenderRef ref="AssertionFile"/>
+            <AppenderRef ref="logstash"/>
+        </Root>
+        <!-- Define a global logger for your project -->
+        <Logger name="io.framework.tests" level="debug" additivity="false">
+            <AppenderRef ref="AppFile"/>
+        </Logger>
+        <Logger name="io.framework.Assertions.Assertions" level="debug" additivity="false">
+            <AppenderRef ref="AssertionFile"/>
+        </Logger>
+    </Loggers>
+</Configuration>
