@@ -44,11 +44,3 @@ testng.xml -> Файл TestNG для распоряжения тестами
             log4j2.xml -> Файл Log4j2 в котором есть: настройка log4j, куда выводить данные логов, подключение к logstash
             logstash.conf -> конфиг-файл logstash в котором мы подключаемся к elasticsearch (БД наших логов)
 
-
-
-IN CASE OF!!!!!!!!!!!!!!!!!!!!!:
- Please refer to C:\Users\user\Проекты\STUDY\apiautoframework\target\surefire-reports for the individual test results.
-        mvn surefire-report:report -DshowSuccess=false
-        <configuration>
-            <useFile>false</useFile>
-        </configuration>

@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="io.framework.Listeners.TestListener"></listener>
     </listeners>
-    <test thread-count="2" name="C:\Users\user\Проекты\STUDY\apiautoframework">
+    <test thread-count="2" name="Custom Assertions test">
         <classes>
             <class name="io.framework.tests.AssertionTests">
                 <methods>
